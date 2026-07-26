@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>❤️ Для тебя ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <div id="background"></div>
+
+    <div class="card" id="screen1">
+
+        <h1>Привет ❤️</h1>
+
+        <p>
+            Сегодня тебя ждет небольшое приключение.
+        </p>
+
+        <button id="startButton">
+            Начать
+        </button>
+
+    </div>
+
+    <div class="card hidden" id="screen2">
+
+    <h1>Первое испытание ❤️</h1>
+
+    <p>
+        Чтобы приблизиться к своему подарку,
+        тебе нужно ответить на один вопрос.
+    </p>
+
+    <h2>Место где мы впервые познакомились?</h2>
+
+    <input
+    type="text"
+    id="answer1"
+    class="answer-input"
+    placeholder="Введи ответ..."
+    >   
+
+    <button id="checkAnswer">
+        Проверить
+    </button>
+
+    <p id="result" class="result"></p>
+
+    </div>
+
+    <div class="card hidden" id="screen3">
+
+    <h1>Второе испытание ❤️</h1>
+
+    <p>
+        Отлично! Теперь следующий вопрос.
+    </p>
+
+    <h2>Моя любимая песня Фладды?</h2>
+
+    <input
+        type="text"
+        id="answer2"
+        class="answer-input"
+        placeholder="Введи ответ..."
+    >
+
+    <button id="checkAnswer2">
+        Проверить
+    </button>
+
+    <p id="result2" class="result"></p>
+
+    </div>
+
+    <div class="card hidden" id="screen4">
+
+    <h1>Третье испытание ❤️</h1>
+
+    <p>
+        Ты уже почти добралась до подарка...
+    </p>
+
+    <h2>Какого числа мы начали встречаться?</h2>
+
+    <input
+        type="text"
+        id="answer3"
+        class="answer-input"
+        placeholder="Например: 15.04.2026"
+    >
+
+    <button id="checkAnswer3">
+        Проверить
+    </button>
+
+    <p id="result3" class="result"></p>
+
+    </div>
+
+    <div class="card hidden" id="screen5">
+
+    <h1>❤️ Ты прошла квест ❤️</h1>
+
+    <p>
+        Осталось открыть свой подарок...
+    </p>
+
+    <div id="giftBox">
+
+        🎁
+
+    </div>
+
+    <p class="giftText">
+        Нажми на подарок
+    </p>
+
+    </div>
+
+    <div class="card hidden" id="screen6">
+
+    <h1>❤️ Сюрприз! ❤️</h1>
+
+    <p>Теперь у нас есть планы на вечер...</p>
+
+    <div class="tickets">
+
+        <img src="images/ticket1.png" id="ticketLeft" class="ticket">
+
+        <img src="images/ticket2.png" id="ticketRight" class="ticket">
+
+    </div>
+
+    <h2>Мы идём на концерт! 🎉</h2>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
